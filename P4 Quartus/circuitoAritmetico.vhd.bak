@@ -1,0 +1,33 @@
+-- Santiago Hernández 
+-- 7 de Octubre de 2021 
+-- Laboratorio CL 
+-- Práctica 4- Circuito Aritmético 
+
+library ieee; 
+use ieee.std_logic_11.all;
+use iee.numeric_std.all;
+
+entity circuito_aritmetico is
+    port(
+        --entradas: 
+        A, B: in std_logic_vector(15 downto 0);
+        S: in std_logic_vector(1 down to 0);
+        Cin: in std_logic;
+        --salidas: 
+        G: out std_logic_vector(15 downto 0);
+        Cout: out std_logic
+    );
+end circuito_aritmetico; 
+
+architecture rtl of circuito_aritmetico is 
+    signal Y: unsigned(16 downto 0):=(others=>'0');
+
+    signal Gtemp: unsigned(15 downto 0):=(others=>'0');
+begin
+    with S select
+        y<="0000000000000000" when "00",
+            B when "01",
+            not(B) when "10",
+            "1111111111111111" when others;
+        Gtemp<= A + Y + Cin;
+end rtl
