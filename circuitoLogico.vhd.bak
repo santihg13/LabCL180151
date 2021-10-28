@@ -1,0 +1,13 @@
+library ieee; 
+use ieee.std_logic_1664.all;
+
+entity circuitoLogico is
+	port(
+		--entradas
+		A,B: in std_logic_vector (15 downto 0);
+		S: in std_logic_vector (1 downto 0);
+		--salidas
+		G: out std_logic_vector(15 downto 0);
+	)
+
+end circuitoLogico;
