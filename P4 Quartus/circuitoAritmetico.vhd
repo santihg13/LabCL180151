@@ -4,22 +4,22 @@
 -- Práctica 4- Circuito Aritmético 
 
 library ieee; 
-use ieee.std_logic_11.all;
-use iee.numeric_std.all;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-entity circuito_aritmetico is
+entity circuitoAritmetico is
     port(
         --entradas: 
         A, B: in std_logic_vector(15 downto 0);
-        S: in std_logic_vector(1 down to 0);
+        S: in std_logic_vector(1 downto 0);
         Cin: in std_logic;
         --salidas: 
         G: out std_logic_vector(15 downto 0);
         Cout: out std_logic
     );
-end circuito_aritmetico; 
+end circuitoAritmetico; 
 
-architecture rtl of circuito_aritmetico is 
+architecture rtl of circuitoAritmetico is 
 	 --señales del mux
     signal Y: unsigned(16 downto 0):=(others=>'0');
 	 constant ceros: unsigned(16 downto 0):=(others=>'0');
@@ -37,9 +37,9 @@ begin
 	 Btemp<= unsigned('0' & B);
 	 CinTemp(0)<= Cin;
 	 --sumador 
-	 Gtemp= Atemp + Y + CinTemp;
+	 Gtemp<= Atemp + Y + CinTemp;
 	 
 	 --salidas
 	 G<= std_logic_vector(Gtemp(15 downto 0));
 	 Cout <= Gtemp(16);
-end rtl
+end rtl;

@@ -38,10 +38,10 @@ mux2: multiplexor
 	port map(s=>cod2bits,a=>a,b=>b,c=>c,d=>d, y=>cod4bits);
 
 dec:deco24
-	port map(a=>cod2bits, f=>SSEG_CM(0), g=>SSEG_CM(1),h=>SSEG_CM(2),i=>SSEG_CM(3));
+	port map(a=>cod2bits, b=>SSEG_CM(0), c=>SSEG_CM(1),d=>SSEG_CM(2),e=>SSEG_CM(3));
 	
 conv:bcd7
-	port map(entrada=>cod4bits, salida=>SSEG_SC);
+	port map(ent=>cod4bits, sal=>SSEG_SC);
 	
 au: circuitoAritmetico
 	port map(cin=>cin,A=>A2,B=>B2, s=>Oper,Cout=>Cout,g=>G2 );

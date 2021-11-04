@@ -29,11 +29,11 @@ package componentes is
 	end component;
 	--break
 	
-	component bdc7--bcd
+	component bcd7--bcd
 	
 	port(
-		entrada: in std_logic_vector( 3 downto 0);
-		salida: out std_logic_vector (6 downto 0)
+		ent: in std_logic_vector( 3 downto 0);
+		sal: out std_logic_vector (6 downto 0)
 		);
 		
 	end component;
@@ -42,7 +42,7 @@ package componentes is
 	port
 (
 	a: in std_logic_vector(1 downto 0);
-	f,g,h,i: out std_logic
+	b,c,d,e: out std_logic
 	
 );
 	end component;
