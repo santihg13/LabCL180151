@@ -1,1 +1,1 @@
-# LabCL180151
+# Repositorio para el laboratorio de Circuitos Lógicos
