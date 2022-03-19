@@ -17,6 +17,10 @@ Los componentes de estas prácticas fueron elaborados usando Visual Studio Code 
 
 - El **generador** nos sirve para simular pulsos, lo cual utilizaremos para controlar el comportamiento del circuito de la prácitca 4. 
 
+### Diagrama de un deco 2-4
+
+![deco](./pics/deco.jpg)
+
 ## P4 Quartus  
 
 El folder principal para los archivos de la práctica 4. Contiene 4 folders (db, incremental_db, output_files y simulation/modelsim), los cuales no modificaremos, debido a que son archivos de complación de Quartus. Nuestro interés está en los siguientes archivos:  
