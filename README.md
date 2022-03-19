@@ -22,7 +22,7 @@ Cada uno de ellos sirve para construir uno de los elementos necesarios para la p
 
 ![Ejemplo de un archivo vhdl](./pics/prueba.png)
 
-La sección de **port** especifica las entradas y salidas del componente. La sección **architecture** especifica el comportamiento del componente con respecto a ciertas entradas. Cada uno de los componentes tiene su propia arquitectura, por lo que hay que prestar especial atención a las funciones de cada uno. 
+La sección de **port** especifica las entradas y salidas del componente. La sección **architecture** especifica el comportamiento del componente con respecto a ciertas entradas. Cada componente tiene su propia arquitectura, por lo que hay que prestar especial atención a las funciones que realizan. En este caso, se han implementado varios elementos que hemos venido trabajando en prácticas anteriores, como el generador que creamos hace dos semanas. 
 
 ## P6 Quartus 
 
