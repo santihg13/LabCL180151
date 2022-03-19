@@ -18,5 +18,7 @@ El folder principal para los archivos de la práctica 4. Contiene 4 folders (db,
 - multiplexor.vhd
 - practica4quartus.vhd
 
+Cada uno de ellos sirve para construir uno de los elementos necesarios para la práctica. El formato es el siguiente: 
 
+![Ejemplo de un archivo vhdl](./pics/prueba.png)
 
