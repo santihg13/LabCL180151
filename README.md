@@ -1,11 +1,21 @@
 
-# Repositorio para el laboratorio de Circuitos Lógicos
+# Repositorio para las prácticas 4 y 6 (Lab. de Circ. Lógicos)
 
 ## Introducción 
 
 Este repositorio contiene las prácticas 4 y 6 del laboratorio, así como los archivos asociados requeridos para su ejecución. 
 
 Los componentes de estas prácticas fueron elaborados usando Visual Studio Code para programar en VHDL; los archivos complementarios fueron generados en Quartus Prime. 
+
+## Recordatorio sobre los elementos 
+
+- El **multiplexor** nos permite convertir varias entradas en una sola salida. Lo utilizaremos para la práctica 4. 
+
+- El **decodificador** nos permite convertir n entradas a 2^n salidas; en el caso de la práctica 4, utilizaremos uno de 2-4. 
+
+- El **circuito aritmético** nos permite realizar operaciones y es el elemento principal de la prácitca 4. 
+
+- El **generador** nos sirve para simular pulsos, lo cual utilizaremos para controlar el comportamiento del circuito de la prácitca 4. 
 
 ## P4 Quartus  
 
@@ -23,6 +33,7 @@ Cada uno de ellos sirve para construir uno de los elementos necesarios para la p
 ![Ejemplo de un archivo vhdl](./pics/prueba.png)
 
 La sección de **port** especifica las entradas y salidas del componente. La sección **architecture** especifica el comportamiento del componente con respecto a ciertas entradas. Cada componente tiene su propia arquitectura, por lo que hay que prestar especial atención a las funciones que realizan. En este caso, se han implementado varios elementos que hemos venido trabajando en prácticas anteriores, como el generador que creamos hace dos semanas. 
+
 
 ## P6 Quartus 
 
