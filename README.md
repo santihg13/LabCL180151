@@ -26,13 +26,10 @@ La sección de **port** especifica las entradas y salidas del componente. La sec
 
 ## P6 Quartus 
 
-Similar al folder anterior, pero ahora contamos con un único archivo vhdl, la unidad funcional. Tiene la siguiente forma: 
+Similar al folder anterior, pero ahora contamos con un único archivo vhdl: la unidad funcional. Tiene la siguiente forma: 
 
 ![unidad funcional](./pics/unidadFuncional.png)
 
-## Adicionales 
-
-Como se menciona anteriormente, cualquier archivo que no sea .vhd **no debe ser modificado**. Esto se debe a que dichos adrchivos contienen los parámetros de compilación que generó Quartus para mi máquina. En caso de querer utilizar estos componentes, se deben importar a Quartus y seguir los pasos para la compilación y asignación de entradas y salidas de hardware (pinout).  
 
 ## Circuito Lógico 
 
@@ -40,3 +37,15 @@ Fuera de cualquiera de las carpetas anteriores se encuentra el archivo circuitoL
 
 
 ![Circuito Lógico](./pics/circlog.png)
+
+## Modo de uso
+
+1. Descargar los archivos vhd.
+2. Agruparlos de la misma forma en que se encuentran en este repositorio. 
+3. Abrir Quartus Prime e importar los archivos vhd como componentes.
+4. Compilar y ejecutar en Quartus.
+
+
+## Adicionales 
+
+Como se menciona anteriormente, cualquier archivo que no sea .vhd **no debe ser modificado**. Esto se debe a que dichos adrchivos contienen los parámetros de compilación que generó Quartus para mi máquina. En caso de querer utilizar estos componentes, se deben importar a Quartus y seguir los pasos para la compilación y asignación de entradas y salidas de hardware (pinout).  
